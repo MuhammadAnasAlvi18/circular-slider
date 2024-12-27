@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circular Slider Slick</title>
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/slick-theme.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="about-section">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="slider-main">
+                    <div class="slider slider-for">
+                        <div class="top">
+                            <img src="./images/rs1.png" alt="">
+                        </div>
+                        <div class="right">
+                            <img src="./images/rs2.png" alt="">
+                        </div>
+                        <div class="bottom">
+                            <img src="./images/rs3.png" alt="">
+                        </div>
+                        <div class="left">
+                            <img src="./images/rs1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="slider slider-nav">
+                        <div class="top"></div>
+                        <div class="right"></div>
+                        <div class="bottom"></div>
+                        <div class="left"></div>
+                    </div>
+                    <div class="slider-text">
+                        <div class="slider-text-div top-text">
+                            <i class="fa-solid fa-earth-americas"></i>
+                            <h6>Serve One Another</h6>
+                        </div>
+                        <div class="slider-text-div right-text">
+                            <i class="fa-solid fa-user"></i>
+                            <h6>Serve Two Another</h6>
+                        </div>
+                        <div class="slider-text-div bottom-text">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <h6>Serve Three Another</h6>
+                        </div>
+                        <div class="slider-text-div left-text">
+                            <i class="fa-solid fa-gear"></i>
+                            <h6>Serve Four Another</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="about-section-text">
+                    <h6>About Us</h6>
+                    <h2>The Potomac Conference Corporation office staff  assist local congregations in becoming and remaining healthy. </h2>
+                    <div class="about-section-text-flex">
+                        <div class="about-bottom-flex">
+                            <p>Our ministries exist to support the local church and schools; provide leadership in developing new ministries in new locations; and to be an encouragement in your journey with the Lord.</p>
+                            <a href="https://pcsda.clickysoft.us/about-us/">READ MORE<img src="https://pcsda.clickysoft.us/wp-content/themes/twentytwenty-child/assets/images/arrow_black.png" alt="image"></a>
+                        </div>
+                        <div class="about-section-slider slick">
+                            <div class="about-section-slider-div">
+                                <h4>Conference Calendar</h4>
+                                <h5>Keep up-to-date on conference lead events!</h5>
+                            </div>
+                            <div class="about-section-slider-div">
+                                <h4>Conference Calendar</h4>
+                                <h5>Keep up-to-date on conference lead events!</h5>
+                            </div>
+                            <div class="about-section-slider-div">
+                                <h4>Conference Calendar</h4>
+                                <h5>Keep up-to-date on conference lead events!</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="./js/slick.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.slider-for').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                arrows: false,
+                fade: true,
+                asNavFor: '.slider-nav',
+                speed: 600,
+            });
+            $('.slider-nav').slick({
+                // slidesToShow: 1,
+                // slidesToScroll: 1,
+                variableWidth: true,
+                adaptiveHeight: true,
+                autoplay: true,
+                arrows: false,
+                asNavFor: '.slider-for',
+                dots: false,
+                // centerMode: true,
+                focusOnSelect: true,
+
+            });
+        })
+    </script>
+</body>
+
+</html>
